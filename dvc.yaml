@@ -1,0 +1,8 @@
+stages:
+  train:
+    cmd: /home/artem/Projects/env1/bin/python3 scripts/model_scripts/train.py
+    deps:
+      - scripts/model_scripts/train.py
+      - data/baselines/train.csv
+    outs:
+      - data/models/model.pkl

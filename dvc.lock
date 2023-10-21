@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: /home/artem/Projects/env1/bin/python3 scripts/model_scripts/train.py
+    deps:
+    - path: data/baselines/train.csv
+      hash: md5
+      md5: a33d298041dca34f9f2e529e84100e36
+      size: 19102
+    - path: scripts/model_scripts/train.py
+      hash: md5
+      md5: 667ed6cc871b21c49c2a9c9cd8b04043
+      size: 880
+    outs:
+    - path: data/models/model.pkl
+      hash: md5
+      md5: 491f171f028a79e977a748e4f3157811
+      size: 396313

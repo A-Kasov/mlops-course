@@ -1,3 +1,4 @@
 /README.txt
 raw/train.csv
 raw/test.csv
+raw/jupyterhub.sqlite
